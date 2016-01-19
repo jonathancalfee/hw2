@@ -3,12 +3,65 @@
   <head>
     <title>Jonathan Calfee</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
   <body>
     <div class="header">
-      <img src="jonathancalfee.jpg">
+      <img src="jonathancalfee.jpg" class="img-circle">
       <h1>Jonathan Calfee</h1>
       <h2>Advertising and Amateur Coder</h2>
       <p>Contact Me:</p>
@@ -18,36 +71,53 @@
       </ul>
     </div>
 
-    <h3>Summary</h3>
-    <p>
-      Jonathan is a young (hopefully still) advertising professional living in Chicago. Jonathan is trying his best to learn coding but the experience is not always easy. He has found that by focusing on one specific task at a time it is easier to stay focused then
-      if he were to try and do a lot of things at once. Also he has found that weekends tend to provide a lot of distractions from doing
-      his homework.
-    </p>
 
-    <h3>Experience</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Summary</h3>
+          <p class="shorten">
+            Jonathan is a young (hopefully still) advertising professional living in Chicago. Jonathan is trying his best to learn coding but the experience is not always easy. He has found that by focusing on one specific task at a time it is easier to stay focused then
+            if he were to try and do a lot of things at once. Also he has found that weekends tend to provide a lot of distractions from doing
+            his homework.
+          </p class="shorten">
+        </div>
+        <div class="col-md-6">
+          <h3>Experience</h3>
 
-    <h4> Google, 2007 - Present</h4>
-    <p>Mobile Search specialist.</p>
-    <p>Learning to Code, one day at a time</p>
+          <h4> Google, 2007 - Present</h4>
+          <p>Mobile Search specialist.</p>
+          <p>Learning to Code, one day at a time</p>
 
-    <h4>HSBC, 2006-2007</h4>
-    <p>Private Label Credits Cards, although not a fan</p>
+          <h4>HSBC, 2006-2007</h4>
+          <p>Private Label Credits Cards, although not a fan</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Skills</h3>
+            <ul>
+              <li>Mobile Search</li>
+              <li>Adwords Specialist</li>
+              <li>Business Strategy</li>
+              <li>COoking</li>
+            </ul>
+        </div>
+          <div class="col-mod-6">
+            <h3>Education</h3>
+            <ul>
+              <li class="info">BA in History and Philosophy, <em>Colgate University, 2006</em></li>
+              <li class="info">Masters of Business Administration, <em>Kellogg School of Management - Northwestern University, 2016</em></li>
+              <a href="http://www.kellogg.northwestern.edu/"target="_blank">
+              <button type="button" class="btn btn-kellogg">Read More On Kellogg</button>
+            </a>
+            </ul>
+        </div>
+      </div>
 
-    <h3>Skills</h3>
-    <ul>
-      <li>Mobile Search</li>
-      <li>Adwords Specialist</li>
-      <li>Business Strategy</li>
-      <li>COoking</li>
-    </ul>
-
-    <h3>Education</h3>
-    <ul>
-      <li>BA in History and Philosophy, <em>Colgate University, 2006</em></li>
-      <li>Masters of Business Administration, <em>Northwestern University, 2016</em></li>
-    </ul>
-
+    <blockquote>
+      <p class="foot">"If you don't have a footer, you're going to get an F for this homework</p>
+      <footer>Professor Coehn <cite title="KIEI 924">KIEI 924</cite></footer>
+    </blockquote>
 
   </body>
 </html>
